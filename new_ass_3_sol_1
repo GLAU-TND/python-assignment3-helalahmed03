@@ -1,0 +1,17 @@
+import random as r
+n=int(input('Enter the no of coin'))
+a=''
+
+def n_rounds(n):
+    h=0
+    for i in range(0,n-1):
+        a=r.choice(['head','tail'])
+        if a=='head':
+            h=h+2
+        else:
+            
+            h=h+1
+        
+    return h
+
+print(n_rounds(n))
